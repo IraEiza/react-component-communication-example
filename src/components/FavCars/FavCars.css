@@ -1,0 +1,14 @@
+.fav-cars {
+  margin: 20px;
+  padding: 0px 20px;
+  padding-bottom: 30px;
+  border: 2px solid black; 
+  min-height: 200px;
+  background-color: rgb(53, 51, 48);
+}
+
+
+.light-fav-cars{
+  background-color: rgb(228, 218, 207);
+  color: black;
+}

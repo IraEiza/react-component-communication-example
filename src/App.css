@@ -1,0 +1,19 @@
+
+.light-app {
+  background-color: white;
+  color: black;
+}
+
+#app {
+  position: absolute;
+  top: 0px;
+}
+
+.light-button {
+  background-color: rgb(226, 124, 40);
+  color: black;
+}
+
+.light-input {
+  background-color: white;
+}

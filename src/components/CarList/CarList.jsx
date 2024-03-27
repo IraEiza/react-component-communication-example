@@ -1,12 +1,10 @@
 import './CarList.css'
 import CarCard from '../CarCard/CarCard'
+import PropTypes from 'prop-types'
 
-
-function CarList({ carList }) {
-
-  console.log(carList)
-
-  const formattedCars = carList.map( (car) => {
+function CarList({ carList, setFavCars }) {
+  
+  const formattedCars = carList.map((car) => {
     return (
       <CarCard 
         key={car.car_vin} 
@@ -15,16 +13,19 @@ function CarList({ carList }) {
         model={car.model}
         price={car.price}
         year={car.year}
+        setFavCars={setFavCars}
       />
     )
   })
 
-  console.log(formattedCars)
-
-
   return (
     <div className='car-list'>{formattedCars}</div>
   )
+}
+
+CarList.propTypes = {
+  carList: PropTypes.array,
+  setFavCars: PropTypes.func
 }
 
 export default CarList
