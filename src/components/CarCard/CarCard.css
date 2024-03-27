@@ -1,0 +1,12 @@
+.car-card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 10px;
+  padding: 5px 15px;
+  background-color: rgb(53, 51, 48);
+}
+
+.price, .details {
+  margin: 5px 0px;
+}
